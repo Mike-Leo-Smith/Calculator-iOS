@@ -16,6 +16,7 @@
 		27F8C6CE1F49577300DBE5BB /* Calculation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F8C6CC1F49577300DBE5BB /* Calculation.cpp */; };
 		27F8C6D51F49623100DBE5BB /* Bridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27F8C6D31F49623100DBE5BB /* Bridge.mm */; };
 		27F8C6D71F49854600DBE5BB /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 27F8C6D61F49854600DBE5BB /* AppIcon.icns */; };
+		3323FB6CCCF019C11018EAC7 /* Screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 3323F716B7436B1B427003F6 /* Screenshot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		27F8C6CD1F49577300DBE5BB /* Calculation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Calculation.hpp; sourceTree = "<group>"; };
 		27F8C6D31F49623100DBE5BB /* Bridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Bridge.mm; sourceTree = "<group>"; };
 		27F8C6D61F49854600DBE5BB /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = AppIcon.icns; path = Assets.xcassets/AppIcon.icns; sourceTree = "<group>"; };
+		3323F716B7436B1B427003F6 /* Screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			children = (
 				273C71FA1F482DCD00BA4875 /* Calculator-Swift */,
 				273C71F91F482DCD00BA4875 /* Products */,
+				3323F7C525F6445C27A561AB /* Screenshots */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +89,14 @@
 				273C72071F482DCD00BA4875 /* Info.plist */,
 			);
 			name = Support;
+			sourceTree = "<group>";
+		};
+		3323F7C525F6445C27A561AB /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				3323F716B7436B1B427003F6 /* Screenshot.png */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +164,7 @@
 				27F8C6D71F49854600DBE5BB /* AppIcon.icns in Resources */,
 				273C72031F482DCD00BA4875 /* Assets.xcassets in Resources */,
 				273C72011F482DCD00BA4875 /* Main.storyboard in Resources */,
+				3323FB6CCCF019C11018EAC7 /* Screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
