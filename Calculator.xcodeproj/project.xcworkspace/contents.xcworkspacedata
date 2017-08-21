@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Calculator-Swift.xcodeproj">
+      location = "self:/Users/mike/Desktop/Calculator-Swift/Calculator.xcodeproj">
    </FileRef>
 </Workspace>

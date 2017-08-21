@@ -9,17 +9,41 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBOutlet weak var display: UILabel!
+    
+    var displayText: String {
+        get {
+            return display.text ?? "0"
+        }
+        set {
+            display.text = newValue
+        }
+    }
+    
+    @IBAction func buttonTouched(_ sender: UIButton) {
+        if let input = sender.currentTitle {
+            if displayText != "0" || input == "." {
+                displayText += input
+            } else {
+                displayText = input
+            }
+        }
+    }
+    
+    let engine = CalculatorModel()
+    
+    @IBAction func doOperation(_ sender: UIButton) {
+        if let operation = sender.currentTitle {
+            displayText = engine.operate(displayText, with: operation)
+        }
+    }
+    
 }
-

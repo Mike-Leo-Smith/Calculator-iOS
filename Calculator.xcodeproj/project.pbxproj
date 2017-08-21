@@ -12,16 +12,26 @@
 		273C72011F482DCD00BA4875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273C71FF1F482DCD00BA4875 /* Main.storyboard */; };
 		273C72031F482DCD00BA4875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 273C72021F482DCD00BA4875 /* Assets.xcassets */; };
 		273C72061F482DCD00BA4875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273C72041F482DCD00BA4875 /* LaunchScreen.storyboard */; };
+		2742200A1F4948C0000B44BD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274220091F4948C0000B44BD /* Model.swift */; };
+		27F8C6CE1F49577300DBE5BB /* Calculation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27F8C6CC1F49577300DBE5BB /* Calculation.cpp */; };
+		27F8C6D51F49623100DBE5BB /* Bridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27F8C6D31F49623100DBE5BB /* Bridge.mm */; };
+		27F8C6D71F49854600DBE5BB /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 27F8C6D61F49854600DBE5BB /* AppIcon.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		273C71F81F482DCD00BA4875 /* Calculator-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calculator-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		273C71F81F482DCD00BA4875 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		273C71FB1F482DCD00BA4875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		273C71FD1F482DCD00BA4875 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		273C72001F482DCD00BA4875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		273C72021F482DCD00BA4875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		273C72051F482DCD00BA4875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		273C72071F482DCD00BA4875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		274220091F4948C0000B44BD /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		27F8C6CB1F49577200DBE5BB /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		27F8C6CC1F49577300DBE5BB /* Calculation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Calculation.cpp; sourceTree = "<group>"; };
+		27F8C6CD1F49577300DBE5BB /* Calculation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Calculation.hpp; sourceTree = "<group>"; };
+		27F8C6D31F49623100DBE5BB /* Bridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Bridge.mm; sourceTree = "<group>"; };
+		27F8C6D61F49854600DBE5BB /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = AppIcon.icns; path = Assets.xcassets/AppIcon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +56,7 @@
 		273C71F91F482DCD00BA4875 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				273C71F81F482DCD00BA4875 /* Calculator-Swift.app */,
+				273C71F81F482DCD00BA4875 /* Calculator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,22 +64,36 @@
 		273C71FA1F482DCD00BA4875 /* Calculator-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				273C71FB1F482DCD00BA4875 /* AppDelegate.swift */,
+				273C720D1F482E8A00BA4875 /* Support */,
 				273C71FD1F482DCD00BA4875 /* ViewController.swift */,
+				27F8C6CC1F49577300DBE5BB /* Calculation.cpp */,
+				27F8C6CD1F49577300DBE5BB /* Calculation.hpp */,
 				273C71FF1F482DCD00BA4875 /* Main.storyboard */,
+				274220091F4948C0000B44BD /* Model.swift */,
+				27F8C6CB1F49577200DBE5BB /* Bridge.h */,
+				27F8C6D31F49623100DBE5BB /* Bridge.mm */,
+			);
+			path = "Calculator-Swift";
+			sourceTree = "<group>";
+		};
+		273C720D1F482E8A00BA4875 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				273C71FB1F482DCD00BA4875 /* AppDelegate.swift */,
 				273C72021F482DCD00BA4875 /* Assets.xcassets */,
+				27F8C6D61F49854600DBE5BB /* AppIcon.icns */,
 				273C72041F482DCD00BA4875 /* LaunchScreen.storyboard */,
 				273C72071F482DCD00BA4875 /* Info.plist */,
 			);
-			path = "Calculator-Swift";
+			name = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		273C71F71F482DCD00BA4875 /* Calculator-Swift */ = {
+		273C71F71F482DCD00BA4875 /* Calculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 273C720A1F482DCD00BA4875 /* Build configuration list for PBXNativeTarget "Calculator-Swift" */;
+			buildConfigurationList = 273C720A1F482DCD00BA4875 /* Build configuration list for PBXNativeTarget "Calculator" */;
 			buildPhases = (
 				273C71F41F482DCD00BA4875 /* Sources */,
 				273C71F51F482DCD00BA4875 /* Frameworks */,
@@ -79,9 +103,9 @@
 			);
 			dependencies = (
 			);
-			name = "Calculator-Swift";
+			name = Calculator;
 			productName = "Calculator-Swift";
-			productReference = 273C71F81F482DCD00BA4875 /* Calculator-Swift.app */;
+			productReference = 273C71F81F482DCD00BA4875 /* Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -97,11 +121,12 @@
 					273C71F71F482DCD00BA4875 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = WV8LDH4SLS;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 273C71F31F482DCD00BA4875 /* Build configuration list for PBXProject "Calculator-Swift" */;
+			buildConfigurationList = 273C71F31F482DCD00BA4875 /* Build configuration list for PBXProject "Calculator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,7 +139,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				273C71F71F482DCD00BA4875 /* Calculator-Swift */,
+				273C71F71F482DCD00BA4875 /* Calculator */,
 			);
 		};
 /* End PBXProject section */
@@ -125,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				273C72061F482DCD00BA4875 /* LaunchScreen.storyboard in Resources */,
+				27F8C6D71F49854600DBE5BB /* AppIcon.icns in Resources */,
 				273C72031F482DCD00BA4875 /* Assets.xcassets in Resources */,
 				273C72011F482DCD00BA4875 /* Main.storyboard in Resources */,
 			);
@@ -137,8 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27F8C6D51F49623100DBE5BB /* Bridge.mm in Sources */,
 				273C71FE1F482DCD00BA4875 /* ViewController.swift in Sources */,
 				273C71FC1F482DCD00BA4875 /* AppDelegate.swift in Sources */,
+				2742200A1F4948C0000B44BD /* Model.swift in Sources */,
+				27F8C6CE1F49577300DBE5BB /* Calculation.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,11 +292,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = WV8LDH4SLS;
 				INFOPLIST_FILE = "Calculator-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "water.inc.Calculator-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Calculator-Swift/Bridge.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,11 +308,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = WV8LDH4SLS;
 				INFOPLIST_FILE = "Calculator-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "water.inc.Calculator-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Calculator-Swift/Bridge.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -288,7 +322,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		273C71F31F482DCD00BA4875 /* Build configuration list for PBXProject "Calculator-Swift" */ = {
+		273C71F31F482DCD00BA4875 /* Build configuration list for PBXProject "Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				273C72081F482DCD00BA4875 /* Debug */,
@@ -297,13 +331,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		273C720A1F482DCD00BA4875 /* Build configuration list for PBXNativeTarget "Calculator-Swift" */ = {
+		273C720A1F482DCD00BA4875 /* Build configuration list for PBXNativeTarget "Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				273C720B1F482DCD00BA4875 /* Debug */,
 				273C720C1F482DCD00BA4875 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
