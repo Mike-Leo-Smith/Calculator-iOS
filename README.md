@@ -2,4 +2,4 @@
 ## Description
 Simple calculator for iOS.
 ## Screenshots
-[!screenshot](Screenshots/Screenshot.png)
+![screenshot](Screenshots/Screenshot.png)
